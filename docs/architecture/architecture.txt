@@ -1,0 +1,49 @@
+ARCHITECTURE - CampusPlay
+
+L’application CampusPlay suit une architecture client-serveur simple.
+
+1. Utilisateur
+L’utilisateur utilise le site depuis un navigateur web.
+
+2. Frontend
+Le frontend contient les pages visibles par l’utilisateur :
+- HTML
+- CSS
+- JavaScript
+
+Il permet d’afficher :
+- les événements ;
+- les ressources ;
+- les formulaires de connexion ;
+- les formulaires d’inscription ;
+- le tableau de bord.
+
+3. Backend
+Le backend est développé en PHP.
+
+Il permet de :
+- traiter les formulaires ;
+- vérifier les données ;
+- gérer les sessions ;
+- communiquer avec la base de données ;
+- appliquer les règles métier.
+
+4. Base de données
+La base de données MySQL stocke :
+- les utilisateurs ;
+- les événements ;
+- les inscriptions ;
+- les ressources ;
+- les réservations.
+
+Schéma simplifié :
+
+Utilisateur
+    ↓
+Navigateur Web
+    ↓
+Frontend HTML / CSS / JavaScript
+    ↓
+Backend PHP
+    ↓
+Base de données MySQL

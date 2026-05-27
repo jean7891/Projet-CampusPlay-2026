@@ -1,0 +1,29 @@
+STORYBOARD - CampusPlay
+
+Parcours principal : inscription à un événement
+
+1. L’étudiant arrive sur la page d’accueil.
+2. Il clique sur "Connexion".
+3. Il entre son email et son mot de passe.
+4. Il arrive sur la liste des événements.
+5. Il clique sur un événement qui l’intéresse.
+6. Il consulte les détails : date, lieu, description, places disponibles.
+7. Il clique sur "S’inscrire".
+8. Le système vérifie qu’il reste des places.
+9. Le système vérifie que l’étudiant n’est pas déjà inscrit.
+10. L’inscription est enregistrée.
+11. Un message de confirmation s’affiche.
+12. L’étudiant peut retrouver l’événement dans son espace personnel.
+
+
+Parcours secondaire : réservation d’une ressource
+
+1. L’étudiant se connecte.
+2. Il ouvre la page "Ressources".
+3. Il choisit une ressource disponible.
+4. Il sélectionne une date de début et une date de fin.
+5. Il envoie une demande de réservation.
+6. La demande passe en statut "en attente".
+7. Le responsable association consulte les demandes.
+8. Il valide ou refuse la réservation.
+9. L’étudiant voit le statut de sa demande.

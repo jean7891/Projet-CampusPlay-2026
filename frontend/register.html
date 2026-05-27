@@ -24,31 +24,31 @@
 
         <h2>Créer un compte</h2>
 
-        <form>
+        <form action="../backend/register.php" method="POST">
             <div>
                 <label>Nom</label><br>
-                <input type="text" placeholder="Votre nom">
+               <input type="text" name="nom" placeholder="Votre nom">
             </div>
 
             <br>
 
             <div>
                 <label>Prénom</label><br>
-                <input type="text" placeholder="Votre prénom">
+                <input type="text" name="prenom" placeholder="Votre prénom">
             </div>
 
             <br>
 
             <div>
                 <label>Email</label><br>
-                <input type="email" placeholder="Votre email">
+                <input type="email" name="email" placeholder="Votre email">
             </div>
 
             <br>
 
             <div>
                 <label>Mot de passe</label><br>
-                <input type="password" placeholder="Votre mot de passe">
+                <input type="password" name="mot_de_passe" placeholder="Votre mot de passe">
             </div>
 
             <br>

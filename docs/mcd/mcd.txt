@@ -1,0 +1,38 @@
+UTILISATEUR
+- id_user (PK)
+- nom
+- prenom
+- email
+- mot_de_passe
+- role
+
+EVENEMENT
+- id_event (PK)
+- titre
+- description
+- date_event
+- heure_event
+- lieu
+- capacite
+- id_createur (FK)
+
+INSCRIPTION
+- id_inscription (PK)
+- id_user (FK)
+- id_event (FK)
+- date_inscription
+- statut
+
+RESSOURCE
+- id_resource (PK)
+- nom
+- type
+- disponibilite
+
+RESERVATION
+- id_reservation (PK)
+- id_user (FK)
+- id_resource (FK)
+- date_debut
+- date_fin
+- statut

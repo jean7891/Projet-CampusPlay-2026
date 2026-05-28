@@ -59,13 +59,13 @@ VALUES
 
 INSERT INTO events (titre, description, date_event, heure_event, lieu, capacite, id_createur)
 VALUES
-('Tournoi FIFA', 'Tournoi FIFA organisé par l’association gaming.', '2026-06-12', '18:00:00', 'Salle B203', 32, 3),
+('Tournoi FIFA', 'Tournoi FIFA organisé par l’association gaming.', '2026-06-12', '18:00:00', 'Salle EM203', 32, 3),
 ('Soirée jeux de société', 'Soirée conviviale autour de jeux de société.', '2026-06-15', '19:00:00', 'Foyer étudiant', 40, 3),
-('Atelier photo', 'Atelier découverte de la photographie sur le campus.', '2026-06-20', '14:00:00', 'Salle A101', 20, 3);
+('Atelier photo', 'Atelier découverte de la photographie sur le campus.', '2026-06-20', '14:00:00', 'Salle SC07', 20, 3);
 
 INSERT INTO resources (nom, type, disponibilite)
 VALUES
-('Salle B203', 'Salle', 1),
+('Salle EM 319', 'Salle', 1),
 ('Console PS5', 'Équipement', 1),
-('Jeu de société Catan', 'Jeu', 1),
+('Jeu de société Monopoly', 'Jeu', 1),
 ('Projecteur', 'Matériel', 1);

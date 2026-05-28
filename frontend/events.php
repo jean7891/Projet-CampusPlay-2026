@@ -1,3 +1,11 @@
+<?php
+require_once "../backend/config.php";
+
+$sql = "SELECT * FROM events ORDER BY date_event ASC";
+$stmt = $pdo->query($sql);
+$events = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,9 +19,11 @@
     <h1>CampusPlay</h1>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="events.html">Événements</a>
-        <a href="resources.html">Ressources</a>
+        <a href="events.php">Événements</a>
+        <a href="resources.php">Ressources</a>
         <a href="login.html">Connexion</a>
+        <a href="my-events.php">Mes inscriptions</a>
+        <a href="my-reservations.php">Mes réservations</a>
     </nav>
 </header>
 
@@ -21,21 +31,23 @@
     <section class="hero">
         <h2>Événements disponibles</h2>
 
-        <div class="card">
-            <h3>Tournoi FIFA</h3>
-            <p>Date : 12 juin 2026</p>
-            <p>Lieu : Salle B203</p>
-            <p>Places restantes : 12</p>
-            <a class="btn" href="event-detail.html">Voir détail</a>
-        </div>
+        <?php if (count($events) === 0): ?>
+            <p>Aucun événement disponible pour le moment.</p>
+        <?php endif; ?>
 
-        <div class="card">
-            <h3>Soirée jeux de société</h3>
-            <p>Date : 15 juin 2026</p>
-            <p>Lieu : Foyer étudiant</p>
-            <p>Places restantes : 25</p>
-            <a class="btn" href="event-detail.html">Voir détail</a>
-        </div>
+        <?php foreach ($events as $event): ?>
+            <div class="card">
+                <h3><?= htmlspecialchars($event["titre"]) ?></h3>
+                <p>Date : <?= htmlspecialchars($event["date_event"]) ?></p>
+                <p>Lieu : <?= htmlspecialchars($event["lieu"]) ?></p>
+                <p>Capacité : <?= htmlspecialchars($event["capacite"]) ?></p>
+
+                <a class="btn" href="event-detail.php?id=<?= $event["id_event"] ?>">
+                    Voir détail
+                </a>
+            </div>
+        <?php endforeach; ?>
+
     </section>
 </main>
 

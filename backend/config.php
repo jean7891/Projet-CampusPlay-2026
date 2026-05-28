@@ -3,7 +3,7 @@
 $host = "localhost";
 $dbname = "campusplay";
 $username = "root";
-$password = "";
+$password = "root";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -11,4 +11,5 @@ try {
 } catch (PDOException $e) {
     die("Erreur de connexion : " . $e->getMessage());
 }
+
 ?>

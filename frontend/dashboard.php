@@ -1,4 +1,16 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION["id_user"])) {
+    header("Location: login.html");
+    exit;
+}
+
+if ($_SESSION["role"] !== "admin") {
+    die("Accès refusé. Cette page est réservée aux administrateurs.");
+}
+
 require_once "../backend/config.php";
 
 $users = $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
@@ -49,13 +61,14 @@ $pendingReservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h1>CampusPlay</h1>
 
     <nav>
-        <a href="index.html">Accueil</a>
+           <a href="index.html">Accueil</a>
         <a href="events.php">Événements</a>
         <a href="resources.php">Ressources</a>
         <a href="my-events.php">Mes inscriptions</a>
         <a href="my-reservations.php">Mes réservations</a>
+        <a href="create-event.php">Créer événement</a>
         <a href="dashboard.php">Dashboard</a>
-        <a href="../backend/logout.php">Déconnexion</a>
+         <a href="../backend/logout.php">Déconnexion</a>
     </nav>
 
 </header>

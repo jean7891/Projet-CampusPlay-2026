@@ -36,13 +36,14 @@ $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h1>CampusPlay</h1>
 
     <nav>
-        <a href="index.html">Accueil</a>
+            <a href="index.html">Accueil</a>
         <a href="events.php">Événements</a>
-        <a href="my-events.php">Mes inscriptions</a>
         <a href="resources.php">Ressources</a>
         <a href="my-events.php">Mes inscriptions</a>
         <a href="my-reservations.php">Mes réservations</a>
-        <a href="../backend/logout.php">Déconnexion</a>
+        <a href="create-event.php">Créer événement</a>
+        <a href="dashboard.php">Dashboard</a>
+         <a href="../backend/logout.php">Déconnexion</a>
     </nav>
 </header>
 

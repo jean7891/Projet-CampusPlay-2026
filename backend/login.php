@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["nom"] = $user["nom"];
         $_SESSION["role"] = $user["role"];
 
-        header("Location: ../frontend/dashboard.php");
+        header("Location: ../frontend/index.html");
         exit;
 
     } else {

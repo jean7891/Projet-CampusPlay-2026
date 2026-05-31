@@ -6,7 +6,7 @@ CampusPlay est un projet de Web dynamique réalisé dans le cadre du module ING2
 
 L’objectif est de développer une plateforme associative et événementielle permettant aux étudiants de consulter des événements, de s’y inscrire, et de réserver des ressources proposées par une association étudiante.
 
-## Fonctionnalités principales
+## Fonctionnalités Principales
 
 - Inscription utilisateur
 - Connexion utilisateur

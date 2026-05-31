@@ -53,9 +53,9 @@ CREATE TABLE reservations (
 
 INSERT INTO users (nom, prenom, email, mot_de_passe, role)
 VALUES
-('Admin', 'CampusPlay', 'admin@campusplay.fr', '$2y$10$examplehash', 'admin'),
-('Martin', 'Jean', 'jean@test.fr', '$2y$10$examplehash', 'etudiant'),
-('Durand', 'Sarah', 'sarah@test.fr', '$2y$10$examplehash', 'responsable');
+('Admin', 'CampusPlay', 'admin@campusplay.fr', 'admin123', 'admin'),
+('Martin', 'Jean', 'asso@campusplay.fr', 'asso123', 'etudiant'),
+('Durand', 'Sarah', 'etudiant@campusplay.fr', 'etu123', 'responsable');
 
 INSERT INTO events (titre, description, date_event, heure_event, lieu, capacite, id_createur)
 VALUES
